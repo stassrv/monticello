@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8 "?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<File_1>
+<STUDENT NUM="1">
+    <family>Иванов</family>
+    <name>Сергей</name>
+    <year>1993</year>
+    <group>ИФ 87</group>
+    <phone PhoneType="L">1111111</phone> 
+    <phone PhoneType="M">1111111</phone> 
+</STUDENT>
+<STUDENT NUM="2">
+    <family>Петрова</family>
+    <name>Галина</name>
+    <year>1992</year>
+    <group>ИФ 87</group>
+    <phone PhoneType="L">noup</phone> 
+    <phone PhoneType="M">noup</phone> 
+</STUDENT>
+<STUDENT NUM="3">
+    <family>Семенов</family>
+    <name>Валерий</name>
+    <year></year>
+    <group>ИФ 88</group>
+    <phone PhoneType="L">3333333</phone>
+    <phone PhoneType="M">3333333</phone> 
+</STUDENT>
+<STUDENT NUM="4">
+    <family>Павлова</family>
+    <name>Ирина</name>
+    <year>1994</year>
+    <group>ИФ 89</group>
+    <phone PhoneType="L">4444444</phone>
+    <phone PhoneType="M">4444444</phone> 
+</STUDENT>
+</File_1>

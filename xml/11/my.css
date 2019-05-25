@@ -1,0 +1,45 @@
+a:link {color: rose;
+    width: 200px;
+    border: outset 4px grey;
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;}
+a:visited {color:rose;
+    width: 200px;
+    border: outset 4px grey;
+    text-decoration: none;
+    text-align: center;
+    }
+a:active {color: rose;
+    width:200px;
+    border: inset 4px grey;
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;}
+a:hover {color: pink;
+    width: 200px;
+    border: outset 4px grey;
+    text-decoration: none;
+    text-align: center;
+    background-color: gray;}
+
+body {
+    font-family: Minion Web, Palatino Linotype, Book Antiqua, Baskerville Win95BT, Times New Roman, serif;
+            background-color: navy;
+    background-image: url(fon.jpg);
+            
+  }
+  
+div
+{
+border-right: 4px outset;	border-top: 4px outset;
+padding:100px;	margin:10px;
+float: right;background-image: url(fon2.jpg);
+overflow: scroll;	text-transform: uppercase;
+border-left: 4px outset;width: 700px;
+height: 300px;color: #0099cc;
+border-bottom: 4px outset;
+font-style: italic;	position: absolute;
+top: 100px;left:100px;
+text-align: left;
+}

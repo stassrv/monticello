@@ -1,0 +1,107 @@
+<html>
+<head>
+<link  rel="stylesheet" type="text/css" href="my.css"/>
+<script language="JavaScript">
+var source;
+var style;
+
+function init() {
+
+source = new ActiveXObject("Microsoft.XMLDOM");
+source.async = false;
+
+style = new ActiveXObject("Microsoft.XMLDOM");
+style.async = false;
+
+source.load("ex05-1.xml");
+
+style.load("ex05-1a.xsl");
+
+document.all.item("xslresult").innerHTML = source.transformNode(style);
+return true;
+}
+
+function orderByMarka() {
+style.load("ex05-1a.xsl");
+document.all.item("xslresult").innerHTML = source.transformNode(style);
+return true;
+}
+
+function orderByNumber() {
+style.load("ex05-1b.xsl");
+document.all.item("xslresult").innerHTML = source.transformNode(style);
+return true;
+}
+
+function orderByColor() {
+style.load("ex05-1c.xsl");
+document.all.item("xslresult").innerHTML = source.transformNode(style);
+return true;}
+</script>
+</head>
+
+<body onLoad="init()">
+<div id="xslresult">
+<!-- Здесь будет размещаться окончательный вариант HTML-содержимого  -->
+</div>
+<INVENTORY>
+        <BOOK>
+           <TITLE>The Adventures of Huckleberry Finn</TITLE>
+           <AUTHOR>Mark Twain</AUTHOR>
+           <BINDING>mass market paperback</BINDING>
+           <PAGES>298</PAGES>
+           <PRICE>$5.49</PRICE>
+        </BOOK>
+        <BOOK>
+           <TITLE>Leaves of Grass</TITLE>
+           <AUTHOR>Walt Whitman</AUTHOR>
+           <BINDING>hardcover</BINDING>
+           <PAGES>462</PAGES>
+           <PRICE>$7.75</PRICE>
+        </BOOK>
+        <BOOK>
+           <TITLE>The Legend of Sleepy Hollow</TITLE>
+           <AUTHOR>Washington Irving</AUTHOR>
+           <BINDING>mass market paperback</BINDING>
+           <PAGES>98</PAGES>
+           <PRICE>$2.95</PRICE>
+        </BOOK>
+        <BOOK>
+           <TITLE>The Marble Faun</TITLE>
+           <AUTHOR>Nathaniel Hawthorne</AUTHOR>
+           <BINDING>trade paperback</BINDING>
+           <PAGES>473</PAGES>
+           <PRICE>$10.95</PRICE>
+        </BOOK>
+        <BOOK>
+           <TITLE>Moby-Dick</TITLE>
+           <AUTHOR>Herman Melville</AUTHOR>
+     
+           <BINDING>hardcover</BINDING>
+           <PAGES>724</PAGES>
+           <PRICE>$9.95</PRICE>
+        </BOOK>
+        <BOOK>
+           <TITLE>The Portrait of a Lady</TITLE>
+           <AUTHOR>Henry James</AUTHOR>
+           <BINDING>mass market paperback</BINDING>
+           <PAGES>256</PAGES>
+           <PRICE>$4.95</PRICE>
+        </BOOK>
+        <BOOK>
+           <TITLE>The Scarlet Letter</TITLE>
+           <AUTHOR>Nathaniel Hawthorne</AUTHOR>
+           <BINDING>trade paperback</BINDING>
+           <PAGES>253</PAGES>
+           <PRICE>$4.25</PRICE>
+        </BOOK>
+        <BOOK>
+           <TITLE>The Turn of the Screw</TITLE>
+           <AUTHOR>Henry James</AUTHOR>
+           <BINDING>trade paperback</BINDING>
+           <PAGES>384</PAGES>
+           <PRICE>$3.35</PRICE>
+        </BOOK>
+     </INVENTORY>
+</body>
+</html>

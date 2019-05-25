@@ -1,0 +1,1 @@
+<xsl:if test="position()<3">  и   <xsl:if test="position()&gt;5">

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+	<main class="ba-text-center">
+		<!-- BEGIN ba-container  -->
+		<div class="ba-container">
+			<h1>GetRandomGlass.beer ^__^</h1>
+			<select name="task" class="ba-task">
+				<p>
+				<option value="headTail" >Орел решка</option>
+				<option value="dise">Игрольные кости</option>
+				<option value="random">Случальное число</option>
+				<option value="randomMinMax">Случальное число между двумя</option>			
+			</select><br>
+		</p>
+			<input id="min" value="10" type="number" name="number" min="1" max="1000" required>
+			<input id="max" value="25" type="number" name="number" min="1" max="1000" required>
+			
+		    <button class="ba-random-btn">Let's drink</button>
+		    <!-- BEGIN ba-random  -->
+		    <span class="ba-random">
+		        Result: <span class="ba-random__result">0</span>
+		    </span>
+		    <!-- END ba-random -->
+		</div>
+		<!-- END ba-container -->
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>

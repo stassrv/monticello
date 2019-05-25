@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/css" href="file_2.css"?>
+<File_1>
+    <STUDENT>
+        <Family>Ivanov</Family>
+        <NAME>Sergio</NAME>
+        <YEAR>1993</YEAR>
+        <GROUP>401 TK</GROUP>
+    </STUDENT>
+    <STUDENT>
+        <Family>Petrov</Family>
+        <NAME>Galina</NAME>
+        <YEAR>1992</YEAR>
+        <GROUP>301 TI</GROUP>
+    </STUDENT>
+    <STUDENT>
+        <Family>Semenov</Family>
+        <NAME>Valera</NAME>
+        <YEAR>1998</YEAR>
+        <GROUP>201 TN</GROUP>
+    </STUDENT>
+    <STUDENT>
+        <Family>Pavlov</Family>
+        <NAME>Ira</NAME>
+        <YEAR>1997</YEAR>
+        <GROUP>201 TT</GROUP>
+    </STUDENT>
+</File_1>  

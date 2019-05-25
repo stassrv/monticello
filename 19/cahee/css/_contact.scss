@@ -1,0 +1,71 @@
+.ba-contact-form {
+    margin-bottom: 40px;
+    @media screen and (min-width: $large){
+        margin-bottom: 0;
+        padding-right: 70px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="tel"],
+    textarea,
+    select {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        height: 50px;
+        border: none;
+        background: rgba(#00c4c4, 0.5);
+        color: #fff;
+        border-left: 5px solid transparent;
+
+        &::placeholder {
+            color: #fff;
+            font-weight: 300;
+        }
+
+        &:focus{
+            border-color: #355b82;
+            background: rgba(#00c4c4, $alpha: 1.0)
+
+        }
+    }
+    textarea{
+        height: auto;
+    }
+}
+
+@media screen and (min-width: $large){
+    .ba-offset-large-2{
+        margin-left: 16.666%;
+    }
+}
+
+.ba-contacts{
+    margin: -5px 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    @media screen and (min-width: $large){
+        padding-left: 70px;
+    }
+
+    li + li{
+        margin-top: 10px;
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1.2;
+    }
+    a{
+        color: inherit;
+        &:hover{
+            color: $primery-color;
+        }
+    }
+}

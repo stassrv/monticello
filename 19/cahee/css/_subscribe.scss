@@ -1,0 +1,28 @@
+.ba-title-small{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.ba-subscribe-content{
+    max-width: 570 px;
+    margin-bottom: 30px;
+}
+
+.ba-subscribe-form{
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: $medium){
+        flex-wrap: nowrap;
+        margin-right: 30px;   
+    }
+
+    [type="email"]{
+        width: 100%;
+        flex-grow: 1;
+        margin-bottom: 20px;
+        @media screen and (min-width: $medium){
+            margin: 0 30px 0 0;   
+        }
+    }
+
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../t/ProximaNova-Regular.woff2') format('woff2'),
+        url('../t/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../t/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('../t/ProximaNova-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../t/ProximaNovaT-Thin.woff2') format('woff2'),
+        url('../t/ProximaNovaT-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../t/ProximaNova-Light.woff2') format('woff2'),
+        url('../t/ProximaNova-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+	font: 400 27px/1.5 Georgia, serif;
+	color: #000;
+	background-color: #464f54;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1100px;
+	padding-top: 150px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+h1,h2,h3,h4,h5,h6, p{
+	margin-bottom: 0 0 30px;
+}
+
+.ba-editor{
+	background-color: #ffffff;
+	box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.22);
+	padding-left: 67px;
+}
+
+.ba-editor-inner{
+	border-left: 1px solid #e8eced;
+	padding: 200px 130px 30px 56px;
+}
+
+.ba-editor-inner p{
+	text-align: justify;
+}
+
+.ba-editor-inner > :last-child{
+	margin-bottom: 0;
+}
+
+.ba-editor-meta{
+	font-family: 'Proxima Nova';
+	color: #b4b4b4;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.22em;
+	margin-bottom: 40px;
+}
+
+
+.ba-editor-title{
+	font-family: 'Proxima Nova';
+	text-transform: uppercase;
+	letter-spacing: 0.053em;
+	color:  #2a2a2a;
+	margin-bottom: 10px;
+	font-weight: 100;
+}
+
+.ba-editor-subtitle{
+	color: #8f8f8f;
+	font-size: 30px;
+	font-style: italic;
+	margin-bottom: 50px;
+}
+

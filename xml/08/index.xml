@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<INVENTORY>
+   <BOOK>
+      <TITLE>The Adventures of Huckleberry Finn</TITLE>
+      <AUTHOR>Mark Twain</AUTHOR>
+      <PAGES>298</PAGES>
+      <PRICE>5.49</PRICE>
+   </BOOK>
+   <BOOK>
+      <TITLE>The Marble Faun</TITLE>
+      <AUTHOR>Nathaniel Hawthorne</AUTHOR>
+      <PAGES>473</PAGES>
+      <PRICE>10.95</PRICE>
+   </BOOK>
+   <BOOK>
+      <TITLE>Moby-Dick</TITLE>
+      <AUTHOR>Herman Melville</AUTHOR>
+      <PAGES>724</PAGES>
+      <PRICE>9.95</PRICE>
+   </BOOK>
+</INVENTORY>

@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="call-template1.xsl"?>
+<firms>
+	<firm name="ФИТ"                 dohod="654" 	/>
+	<firm name="МЭО" 	               dohod="189" 	/>
+	<firm name="ПРИКЛАДНАЯ"	         dohod="221" 	/>
+	<firm name="Классическая" 	   dohod="620" 	/>
+	<firm name="МХАНИКИ"		   dohod="456" 	/>
+</firms>
+call-template1.xsl
+<?xml version="1.0" ?>
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template name="histogram">
+	<table bgcolor="#dddddd" align="center">
+		<colgroup style="text-align: right; padding-left: 10px;" />
+		<colgroup style="padding-right: 10px;" />
+
+		<xsl:for-each select="//firm">
+			<xsl:sort select="@dohod" order="descending"/>
+
+			<xsl:call-template name="hrow">
+				<xsl:with-param name="title" select="@name" />
+				<xsl:with-param name="value" select="@dohod" />
+			</xsl:call-template>
+		</xsl:for-each>
+	</table>
+</xsl:template>
+
+<xsl:template name="hrow">
+	<xsl:param name="title" />
+	<xsl:param name="value" select="0" />
+	<xsl:param name="coeff" select="0.5" />
+
+	<xsl:if test="not($title = '')">
+	<tr>
+		<td><xsl:value-of select="$title" /></td>
+		<td>
+			<span>
+				<xsl:attribute name="style">
+					border: 1px inset;
+					height: 10px;
+			width: <xsl:value-of select="$value * $coeff" />px;
+					</xsl:attribute>
+
+			<xsl:text>&#160;</xsl:text>
+			</span>
+			<xsl:text>&#160;</xsl:text><xsl:value-of select="$value" />
+			</td>
+		</tr>
+	</xsl:if>
+</xsl:template>
+
+<xsl:template match="/">
+    <head>
+	<style>
+	body, table {
+		font: 10pt Verdana;
+	}
+	td span {
+		font-size: 1pt;
+	}
+	h4 {
+		font-size: 11pt;
+		margin-bottom: 0.5em;
+	}
+	</style>
+    </head>
+    <body>
+
+	<h4>Таблица</h4>
+        <table border="0" cellspacing="1" align="center">
+            <tr style="color: white; background: black;">
+                <th>Факультет</th>
+                <th>Набор <br /> <span style="font-weight: normal; font-size: 7pt;">(студентов /год)</span></th>
+            </tr>
+	    <colgroup style="width: 300; padding-left: 5;" />
+	    <colgroup style="width: 160; text-align: center;" />
+            <xsl:apply-templates select="firms/firm">
+		<xsl:sort select="@dohod" />
+	    </xsl:apply-templates>
+        </table>
+	<h4>Гистограмма</h4>
+	<xsl:call-template name="histogram" />
+    </body>
+</xsl:template>
+<xsl:template match="firm">
+    <tr>
+	<xsl:if test="not(position() mod 2 = 0)">
+	<xsl:attribute name="bgcolor"><xsl:text>#00DDA5</xsl:text></xsl:attribute>
+	</xsl:if>
+	<td><xsl:value-of select="@name" /></td>
+	<td><xsl:value-of select="@dohod" /></td>
+    </tr>
+</xsl:template>
+</xsl:stylesheet>

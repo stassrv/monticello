@@ -1,0 +1,12 @@
+<xsl:for-each select="tutorial/avto/cars/car">
+  <xsl:sort order="ascending" select="number(carNumber)" data-type="number"/>
+  <xsl:sort order="ascending" select="carMarka"/>
+  <xsl:if test="carNumber&gt;1000000">
+    
+ <tr bgcolor="#11dd33">
+    <td><xsl:value-of select="carMarka"/></td>
+    <td align="right"><xsl:value-of select="carNumber"/> <xsl:value-of select="carNumber/@caption"/></td>
+    <td><xsl:value-of select="carColor"/></td>
+  </tr>
+  </xsl:if>
+  </xsl:for-each>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<File_1>
+    <TITLE STYLE='font-style:normal; font-size:14pt'>
+    <KEEP>Keep Calm and By This!</KEEP>
+    <PHONE>
+        <ph>Samsung</ph>
+    </PHONE>
+    <PHONE>
+        <ph>Meizu</ph>
+    </PHONE>
+        <PHONE>
+        <ph>Honor</ph>
+    </PHONE>
+    <PHONE>
+        <ph>Xiaomi</ph>
+    </PHONE>
+     <PHONE>
+        <ph>Apple</ph>
+    </PHONE>
+    </TITLE>
+    
+</File_1>

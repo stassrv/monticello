@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<TITLE>Лабораторная работа</TITLE>
+</HEAD>
+<BODY>
+<XML ID="dsoStudent">
+<?xml version="1.0" SRC= "file_1.xml"?>
+<STUDENT>
+<FAMILY>Иванов</FAMILY>
+<NAME>Сергей </NAME>
+<YEAR>1993</YEAR>
+<GROUP>ИФ 87</GROUP>
+</STUDENT>
+</XML>
+<!-Другие элементы HTML -->
+</BODY>
+</HTML>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+<?xml-stylesheet type='text/xsl' href="ex03-1.xsl" tppabs="ex03-1.xsl"?>
+<tutorial>
+<avto>
+  <cars>
+    <carsCaption>Автомобили</carsCaption>
+    <carsCaptionMarka>Марка</carsCaptionMarka>
+    <carsCaptionNumber>Номер</carsCaptionNumber>
+    <carsCaptionColor>Цвет</carsCaptionColor>
+    <car>
+      <carMarka>Opel</carMarka>
+      <carNumber>34с666</carNumber>
+      <carColor>Белый</carColor>
+    </car>
+     <car>
+      <carMarka>BMW</carMarka>
+      <carNumber>34rt66</carNumber>
+      <carColor>Индиго</carColor>
+    </car>
+     <car>
+      <carMarka>Mersedes</carMarka>
+      <carNumber>341111</carNumber>
+      <carColor>черный</carColor>
+    </car>
+     <car>
+      <carMarka>Mazda</carMarka>
+      <carNumber>456678</carNumber>
+      <carColor>синий</carColor>
+    </car>
+  </cars>
+</avto>
+</tutorial>

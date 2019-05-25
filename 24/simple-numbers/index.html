@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Start</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="ba-container">
+      <h1>Выберите интервал</h1>
+      <input
+        id="min"
+        type="number"
+        name="number"
+        min="1"
+        max="1000"
+        required
+      />
+      <input
+        id="max"
+        type="number"
+        name="number"
+        min="1"
+        max="1000"
+        required
+      />
+
+      <button class="ba-random-btn">Let's drink</button>
+      <!-- BEGIN ba-random  -->
+      <span class="ba-random">
+        Result: <span class="ba-random__result">0</span>
+      </span>
+	</div>
+	<script src="js/main.js"></script>
+  </body>
+</html>

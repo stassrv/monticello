@@ -1,0 +1,100 @@
+body{
+	background: url(https://alexcss.github.io/playlist/img/816831.jpg) 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-spaceman-list{
+	list-style: none;
+	padding: 20px;
+}
+
+.ba-spaceman{
+	background: #eee;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5)
+}
+
+.ba-spaceman__name{
+	margin: 0;
+	color: rgba(255,0,0,0.5)
+}
+
+.ba-spaceman__top{
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 15px;
+	font-style: 150%;
+}
+
+.ba-spaceman__index{
+	font-weight: 700;
+	margin-right: 10px;
+	font-style: 80%;
+}
+
+.ba-spaceman__img{
+	float: right;
+}
+
+.ba-title{
+	margin: 0 0 30px;
+	padding-top: 40px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.ba-title b{
+	color: #fff;
+}

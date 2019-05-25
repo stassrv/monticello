@@ -1,0 +1,92 @@
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "fonts";
+
+:root{
+	--body-fontfamily: 'JF Flat', sans-serif;
+}
+
+body{
+	background: #f6704b;
+	font: 400 18px/1.3 var(--body-fontfamily);
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+	padding-top: 40px;
+}
+
+p{
+	margin: 0 0 15px;
+}
+
+.ba-icon{
+	width: 58px;
+	height: 58px;
+	display: inline-block;
+	background: url(../img/icons.png) no-repeat 50% 0;
+
+	margin-right: 40px;
+
+	outline: 1px solid #fff;
+
+	&--location{
+		background-position-y: 5px;
+	}
+	&--music{
+		background-position-y: -95px;
+	}
+	&--notes{
+		background-position-y: -196px;
+	}
+	&--books{
+		background-position-y: -461px;
+	}
+	&--tendenses{
+		background-position-y: -561px;
+	}
+}
+
+.ba-accordion{
+	max-width: 380px;
+	margin: 0 auto;
+	
+	&__title{
+		display: flex;
+		align-items: center;
+		font-size: 24px;
+		background: #620808;
+		color: #ffe9c1;
+		padding: 15px;
+
+	}
+
+	&__content{
+		display: none;
+		margin: 0;
+		background: #620808;
+		color: #ffe9c1;
+		padding: 15px;
+		box-shadow: inset 0 0 6px rgba(#000, 0.25);
+		& > :last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.ba-music{
+	background-color: #a53f3f;
+	color: #f4ce74;
+}
+.ba-books{
+	background-color: #ffe9c1;
+	color: #a53f3f;
+}
+.ba-notes{
+	background-color: #f4ce74;
+	color: #620808;
+}

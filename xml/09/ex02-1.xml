@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="WINDOWS-1251" ?>
+<?xml-stylesheet type='text/xsl' href="ex02-2.xsl" tppabs="ex02-2.xsl"?>
+<tutorial>
+	<car caption="Автомобиль: " marka="Opel">
+		<carInfo number="34с666" color="белый" />
+	</car>
+</tutorial>
